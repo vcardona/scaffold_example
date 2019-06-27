@@ -18,7 +18,7 @@ class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
   final String title;
-
+  final controller = PageController(initialPage: 1);
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -74,6 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
               color: Colors.amber, fontSize: 30.0, fontStyle: FontStyle.normal),
         ),
       ), //body Center
+
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: FloatingActionButton(
           elevation: 20.0,
